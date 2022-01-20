@@ -18,5 +18,9 @@ namespace RerMobile
         {
             await Navigation.PushAsync(new Page1());
         }
+        private async void ToNextPage(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Page2());
+        }
     }
 }

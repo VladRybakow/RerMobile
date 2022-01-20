@@ -3,23 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RerMobile.MainPage">
 
-    <StackLayout>
-        
+    <StackLayout Margin="50,20,50,20" Spacing="40">
+
         <Frame BackgroundColor="White">
-            <Image Source="logo-burger-king.png"/>
+            <Image Source="APLUS.png"/>
         </Frame>
 
-        <Label Text="Логин" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,0,0,0"></Label>
-        <Entry HorizontalOptions="Center" WidthRequest="280" BackgroundColor="Gray"></Entry>
+        <StackLayout Spacing="5">
 
-        <Label Text="Пароль" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,40,0,0"></Label>
-        <Entry HorizontalOptions="Center" WidthRequest="280"  Margin="0,0,0,40" BackgroundColor="Gray"></Entry>
+            <Label Text="Логин" TextColor="Black" Margin="10,10,60,0" FontSize="20"></Label>
+
+            <Frame Margin="0,0" BorderColor="Black">
+                <Entry x:Name="LoginTextbox" TextColor="Black" 
+                       Background="White" Margin="-15,-15"
+                       Keyboard="Email"/>
+            </Frame>
+
+            <Label Text="Пароль" TextColor="Black" Margin="10,10,60,0" FontSize="20"></Label>
+
+            <Frame Margin="0,0" BorderColor="Black">
+                <Entry x:Name="PasswordTextBox" IsPassword="True" TextColor="Black"
+                       Background="White" Margin="-15,-15" Keyboard="Chat"/>
+            </Frame>
+
+        </StackLayout>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Clicked="ToModalPage" x:Name="Reg" Text="Зарегистрироваться"></Button>
-            <Button Clicked="ToModalPage" x:Name="Entry" Text="Вход"></Button>
-        </StackLayout>
-        
-    </StackLayout>
 
+            <Button Clicked="ToModalPage" x:Name="Reg" Text="Зарегистрироваться"></Button>
+            <Button Clicked="ToNextPage" x:Name="Entry" Text="Вход"></Button>
+
+        </StackLayout>
+
+    </StackLayout>
 </ContentPage>

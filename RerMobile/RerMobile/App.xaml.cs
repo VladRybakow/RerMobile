@@ -6,7 +6,6 @@ namespace RerMobile
 {
     public partial class App : Application
     {
-        internal static NavigationPage NavPage;
         public App()
         {
             InitializeComponent();
