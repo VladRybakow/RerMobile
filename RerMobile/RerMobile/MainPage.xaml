@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RerMobile.MainPage">
+
+    <StackLayout>
+        
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Image Source="logo-burger-king.png"/>
+        </Frame>
+
+        <Label Text="Логин"></Label>
+        <Entry></Entry>
+
+        <Label Text="Пароль"></Label>
+        <Entry></Entry>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Clicked="ToModalPage" x:Name="Reg" Text="Регистрация"></Button>
+            <Button Clicked="ToModalPage" x:Name="Entru" Text="Вход"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
