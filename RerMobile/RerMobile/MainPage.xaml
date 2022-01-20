@@ -5,20 +5,21 @@
 
     <StackLayout>
         
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="White">
             <Image Source="logo-burger-king.png"/>
         </Frame>
 
-        <Label Text="Логин"></Label>
-        <Entry></Entry>
+        <Label Text="Логин" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,0,0,0"></Label>
+        <Entry HorizontalOptions="Center" WidthRequest="280" BackgroundColor="Gray"></Entry>
 
-        <Label Text="Пароль"></Label>
-        <Entry></Entry>
+        <Label Text="Пароль" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,40,0,0"></Label>
+        <Entry HorizontalOptions="Center" WidthRequest="280"  Margin="0,0,0,40" BackgroundColor="Gray"></Entry>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Clicked="ToModalPage" x:Name="Reg" Text="Регистрация"></Button>
-            <Button Clicked="ToModalPage" x:Name="Entru" Text="Вход"></Button>
+            <Button Clicked="ToModalPage" x:Name="Reg" Text="Зарегистрироваться"></Button>
+            <Button Clicked="ToModalPage" x:Name="Entry" Text="Вход"></Button>
         </StackLayout>
+        
     </StackLayout>
 
 </ContentPage>

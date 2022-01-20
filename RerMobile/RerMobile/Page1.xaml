@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RerMobile.Page1">
+             x:Class="RerMobile.Page1"
+             Title="Регистрация">
     <ContentPage.Content>
+        
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="E-mail" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,0,0,0"></Label>
+            <Entry HorizontalOptions="Center" WidthRequest="280" BackgroundColor="Gray"></Entry>
+            
+            <Label Text="Логин" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,0,0,0"></Label>
+            <Entry HorizontalOptions="Center" WidthRequest="280" BackgroundColor="Gray"></Entry>
+
+            <Label Text="Пароль" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,0,0,0"></Label>
+            <Entry HorizontalOptions="Center" WidthRequest="280" BackgroundColor="Gray"></Entry>
+
+            <Label Text="Пароль" FontSize="16" HorizontalOptions="Start" TextColor="Black" Margin="55,0,0,0"></Label>
+            <Entry HorizontalOptions="Center" WidthRequest="280" BackgroundColor="Gray"></Entry>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Зарегистрироваться"></Button>
+            </StackLayout>
+            
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

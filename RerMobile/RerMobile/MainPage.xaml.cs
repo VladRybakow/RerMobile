@@ -16,7 +16,7 @@ namespace RerMobile
         }
         private async void ToModalPage(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Page1());
+            await Navigation.PushAsync(new Page1());
         }
     }
 }
