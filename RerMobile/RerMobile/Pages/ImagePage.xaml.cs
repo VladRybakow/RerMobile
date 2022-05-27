@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace RerMobile
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page4 : ContentPage
+    public partial class ImagePage : ContentPage
     {
-        public Page4()
+        public ImagePage()
         {
             InitializeComponent();
         }

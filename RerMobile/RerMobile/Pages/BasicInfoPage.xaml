@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            x:Class="RerMobile.Page3"
+            x:Class="RerMobile.BasicInfoPage"
             xmlns:local="clr-namespace:RerMobile"
             Title="Проект 1">
     <ContentPage Title="О проекте">
@@ -42,9 +42,9 @@
             </StackLayout>
         </ScrollView>
     </ContentPage>
-    
-    <local:Page4 Title="Картинки">
-    </local:Page4>
+
+    <local:ImagePage Title="Картинки">
+    </local:ImagePage>
     
     <ContentPage Title="Контакты">
         
